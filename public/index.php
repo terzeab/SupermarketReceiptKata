@@ -3,10 +3,11 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $basket = [
-    ['SKU' => 'SKU-Apple', 'quantity' => 3],
+    ['SKU' => 'SKU-Pear', 'quantity' => 2],
     ['SKU' => 'SKU-Banana', 'quantity' => 4],
-    ['SKU' => 'SKU-Grapes', 'quantity' => 2],
-    ['SKU' => 'SKU-Milk', 'quantity' => 2],
+    ['SKU' => 'SKU-Grapes', 'quantity' => 3],
+    ['SKU' => 'SKU-Apple', 'quantity' => 7],
+    ['SKU' => 'SKU-Milk', 'quantity' => 1],
     ['SKU' => 'SKU-Bread', 'quantity' => 2]
 ];
 

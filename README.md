@@ -11,10 +11,12 @@ Below are the prices for each SKU used in the project:
 - **SKU-Banana**: $1.20 per kg
 - **SKU-Grapes**: $3.50 per kg
 - **SKU-Apple**: $2.00 per kg
+- **SKU-Pear**: $1.80 per kg
 - **SKU-Milk**: $1.50 per carton
 - **SKU-Bread**: $2.00 per loaf
 
 ## Requirements
+
 
 ### Part 1: Basic Basket Calculation
 
@@ -26,6 +28,7 @@ You will be provided with a basket array in `index.php`, which contains a list o
 
 ```php
 $basket = [
+    ['SKU' => 'SKU-Pear', 'quantity' => 2],
     ['SKU' => 'SKU-Banana', 'quantity' => 4],
     ['SKU' => 'SKU-Grapes', 'quantity' => 3],
     ['SKU' => 'SKU-Apple', 'quantity' => 7],
@@ -35,8 +38,16 @@ $basket = [
 ```
 
 
+### Part 2: Implement Discounts
 
-### Part 2: Implement Bulk Discounts
+**Apply the following discount to eligible items in the basket:**
+
+- **SKU-Pear**: Apply a 5% discount on all purchased pears.
+
+The system should automatically identify when this item is in the basket and apply the discount to the total cost of the items accordingly, regardless of the quantity purchased.
+
+
+### Part 3: Implement Bulk Discounts
 
 **Apply the following bulk discounts to eligible items in the basket:**
 
@@ -47,7 +58,7 @@ The system should automatically detect when the quantity threshold for each disc
 
 
 
-### Part 3: Implement Buy-One-Get-One-Free (BOGOF) Promotions
+### Part 4: Implement Buy-One-Get-One-Free (BOGOF) Promotions
 
 **Apply the following Buy-One-Get-One-Free promotions to eligible items in the basket:**
 
@@ -58,7 +69,7 @@ The system should correctly identify when a BOGOF promotion applies and adjust t
 
 
 
-### Part 4: Implement Combo Discount for Milk and Bread
+### Part 5: Implement Combo Discount for Milk and Bread
 
 **Apply the following combo discount:**
 
@@ -68,7 +79,7 @@ The system should detect when both `SKU-Milk` and `SKU-Bread` are present in the
 
 
 
-### Part 5: Calculate Final Basket Price with All Promotions
+### Part 6: Calculate Final Basket Price with All Promotions
 
 **Calculate the total price of the basket after applying all applicable promotions:**
 
